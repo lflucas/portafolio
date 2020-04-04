@@ -7,14 +7,14 @@
         <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
-        <header>
+        <header class="header">
             <div>
                 <!-- Indicando La  imagen del logo -->
-                <figure>
+                <figure class="logo">
                     <img src="images/logo.png" alt="logo de https:citelersas.com">logo
                 </figure>
                 <!-- Indicando el navegador -->
-                <nav>
+                <nav class="menu">
                     <ol>
                         <li>
                             <a href="#portafolio">Portafolio</a>
@@ -34,54 +34,57 @@
         <!-- Secciones que para indicar partes en el portafolio -->
 
         <!-- Seccion principal -->
-        <section>
+        <section class="hero">
             <h1>
                 Hola! Soy <strong>Felipe Lucas</strong>  Desarrollador <br>  <strong>Javascript</strong>  con <br> pasión por la <strong>enseñanza</strong> 
             </h1>
             <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio" >
         </section>
         <!-- Seccion de portafolio -->
-        <section id="portafolio">
+        <section id="portafolio" class="portfolio">
             <!-- Creacion de los article -->
             <h2>Portafolio (Proyectos Destacados) </h2>
-            <article>
-                <h3>Platzi video</h3>
-                <h6>React Native / React</h6>
-                <p> <small> <strong>Fecha:</strong>  29/03/2020</small></p>
-                <p><small> <strong>Puedes verlo en: </strong> https://platzo.com/native</small></p>
-                <p>Platzi video fue el resultado de tres meses de trabajo
+            <article class="project">
+                <h3 class="project-title">Platzi video</h3>
+                <h6 class="project-course" >React Native / React</h6>
+                <p class="project-date"> <small> <strong>Fecha:</strong>  29/03/2020</small></p>
+                <p class="project-url"><small> <strong>Puedes verlo en: </strong> https://platzo.com/native</small></p>
+                <p class="project-description">Platzi video fue el resultado de tres meses de trabajo
                     para crear la mejor app para enseñar el funcionamiento 
                     de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados
                     de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones
                     multiplataforma
                 </p>
-                <img src="images/platzi-video-react-native.png" width="500"alt="imagen platzi video react native">
+                <figure class="project-imageContainer">
+                    <img class="project-image" width="500" src="images/platzi-video-react-native.png" width="500"alt="imagen platzi video react native">
+                </figure>
+                
             </article>
 
         </section>
         <!-- Seccion de eventos -->
         <section id="eventos">
             <h2>Más sobre mi Experiencia</h2>
-            <article>
-                <figure>
-                    <img src="images/platzi-conf.jpg" width="500" height="300" alt="imagen platziconf">
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" width="500" height="300" alt="imagen platziconf">
                 </figure>
-                <h3>Platziconf Mexico 2018</h3>
-                <p>El evento mas grande sobre gente que quiere aprender más de internet
+                <h3 class="event-title">Platziconf Mexico 2018</h3>
+                <p class="event-description">El evento mas grande sobre gente que quiere aprender más de internet
                     en este evento te comparto como tener una vida constante de aprendizaje.
                 </p>
-                <a href="https://www.youtube.com/watch?v=iLBBRuVDOo4" target="_blank">Ver platica</a>
+                <a class="event-url" href="https://www.youtube.com/watch?v=iLBBRuVDOo4" target="_blank">Ver platica</a>
             </article>
         
         </section>
         <!-- Realizacion de la seccion de contacto -->
-        <section id="contacto">
-            <form action="/suscripcion/">
+        <section id="contacto" class="contact">
+            <form action="/suscripcion/" class="form-email">
                 <h3>¿Creamos algo juntos?</h3>
                 <input type="text" placeholder="Dejame tu email" id="email">
                 <button>Enviar</button>
             </form>
         </section>
-        <footer>footer</footer>
+        <footer class="footer">footer</footer>
     </body>
 </html>
