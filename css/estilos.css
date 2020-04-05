@@ -49,6 +49,20 @@ h1 strong
     background-position-x: right;
 
 }
+/* Decorando la clase proyecto */
+.project
+{
+    /* border-top:10px solid red;
+    border-right:10px solid green;
+    border-left:10px solid blue;
+    border-bottom:10px solid blueviolet; */
+    /* border: .5px solid fuchsia; */
+    /* border-top-style: groove;
+    border-top-color: fuchsia;
+    border-top-width: 10px; */
+    border: 1px solid gray;
+    border-radius: 10px;
+}
 
 /* detallando a la izquierda project-details */
 .project-details
