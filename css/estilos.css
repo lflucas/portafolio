@@ -3,6 +3,7 @@ body
 {
     /* se elige el estilo de fuente para todo el body, y sino no lo encuentra elija sans serife */
     font-family: 'Source sans pro', sans-serif;
+    margin: 0;
 }
 h1, h2, h3, h4, h5, h6
 {
@@ -22,6 +23,7 @@ h1
     letter-spacing: -.2px;
     /* Indicando el color del h1 */
     color: white;
+    margin: 100px 520px 150px 30px;
 
     /* Transforma el texto, minuscula,mayusulas o iniciales de letras */
     /* text-transform: uppercase;
@@ -49,6 +51,11 @@ h1 strong
     background-position-x: right;
 
 }
+/* colocando color de fondo a la clase portfolio */
+.portfolio
+{
+    background: #fafafa;
+}
 /* Decorando la clase proyecto */
 .project
 {
@@ -62,6 +69,14 @@ h1 strong
     border-top-width: 10px; */
     border: 1px solid gray;
     border-radius: 10px;
+    /* Aplicando un margen hacia abajo para separar proyecto 1 del 2 */
+    margin-bottom: 15px;
+    margin: 10px;
+    padding: 20px;
+    /* colocando color de fondo blanco */
+    background: white;
+    /* Aliniando descripcion con imagen con el display:flex  */
+    display: flex;
 }
 
 /* detallando a la izquierda project-details */
