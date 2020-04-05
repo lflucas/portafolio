@@ -1,5 +1,74 @@
-header
+/* Creacion del body */
+body
 {
-    background:#ff0000, #00ff00, #0000ff
+    /* se elige el estilo de fuente para todo el body, y sino no lo encuentra elija sans serife */
+    font-family: 'Source sans pro', sans-serif;
 }
-/* selector de etiquetas */
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Fjalla One', sans-serif;
+    /* anchura del fuente */
+    font-weight: normal;
+    /* estilo de la fuente */
+    /* font-style: italic; */
+}
+h1
+{
+    /* tamaño en pixeles del h1 */
+    font-size: 40px;
+    /* Altura de la linea */
+    line-height: 1.5em;
+    /* Espaciado entre letras */
+    letter-spacing: -.2px;
+    /* Indicando el color del h1 */
+    color: white;
+
+    /* Transforma el texto, minuscula,mayusulas o iniciales de letras */
+    /* text-transform: uppercase;
+    /* Decorar el texto por colores o lineas */
+    /* text-decoration: blue; */
+}
+/* Indicar los colores internos de color azul en el strong */
+h1 strong
+{
+    color: #026fff;
+}
+
+/* Colocando hero de 300px de alto */
+.hero
+{
+    height: 300px;
+    /* colocando la imagen de fondo en hero */
+    background-image: url("../images/hero.jpg");
+    background-color:#1b2127 ;
+    /* Indicando dimensiones */
+    background-size: 500px 300px;
+    /* como hasta ahora la imagen se redimensiono, se hara para que no sea mosaico osea no repeat */
+    background-repeat: no-repeat;
+    /* posicionando la imagen en el eje x, con el valor right(derecha) */
+    background-position-x: right;
+
+}
+
+/* detallando a la izquierda project-details */
+.project-details
+{
+    width: 500px;
+}
+/* alinieando el image-contaimer a la derecha por medio del ancho */
+.project-imageContainer
+{
+    width: 500px;
+}
+/* Añadiendo color a la imagen y texto del hero */
+.header
+{
+    background-color: #1b2127;
+    color: white;
+}
+/* aplicando color al link a */
+.header a
+{
+    color: white;
+    text-decoration: none;
+}
