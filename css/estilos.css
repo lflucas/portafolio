@@ -213,3 +213,57 @@ figure
     color: white;
     text-decoration: none;
 }
+
+.event-list
+{
+    display: flex;
+}
+/* Estilizando event */
+.event
+{
+    
+    margin: 10px;
+    width: 480px;
+    /* arregla el cuadro para que no se encoja con el overflow */
+    flex-shrink: 0;
+    /* Adecuando un borde redondeado */
+    border-radius: 10px;
+    /* Arregla la imagen para que no dañe el borde redondeado */
+    overflow: hidden;
+    background: #f4fbff;
+}
+/* Adecuando las imagenes para que vayan correspondiente al tamaño */
+.event img
+{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+/* Adeacuando el cuadro del parrafo para que no se junte
+ con la imagen sino que se coloque encima */
+ .event-detail
+ {
+     margin: 20px 40px;
+     background: white;
+     margin-top: -40px;
+     position: relative;
+     /* añadiendo padding al parrafo para que se separe del margen */
+     padding: 20px;
+     text-align: center;
+ }
+ .event-description
+ {
+     text-align: left;
+ }
+ .event-url
+ {
+     border: 1px solid ;
+     padding: 5px 20px;
+     border-radius: 5px ;
+     text-decoration: none;
+     color: #056fff;
+ }
+ .event-list-title
+ {
+    margin-left: 20px;    
+}
