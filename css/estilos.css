@@ -23,7 +23,8 @@ h1
     letter-spacing: -.2px;
     /* Indicando el color del h1 */
     color: white;
-    margin: 100px 520px 150px 30px;
+    margin: 0;
+    /* margin: 100px 520px 150px 30px; */
 
     /* Transforma el texto, minuscula,mayusulas o iniciales de letras */
     /* text-transform: uppercase;
@@ -49,7 +50,10 @@ h1 strong
     background-repeat: no-repeat;
     /* posicionando la imagen en el eje x, con el valor right(derecha) */
     background-position-x: right;
-
+    /* usando flex para poner la imagen en horizontal */
+    display: flex;
+    /* aplicando el texto hacia el centro */
+    align-items: center;
 }
 /* colocando color de fondo a la clase portfolio */
 .portfolio
@@ -94,9 +98,76 @@ h1 strong
 {
     background-color: #1b2127;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+/* Organizando ol y ul */
+ol, ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu
+{
+    height: inherit;
+}
+/* colocar en display flex los ol para que esten horizontalmente */
+.header ol
+{
+    display: flex;
+    height: inherit;
+}
+.header ol li
+{
+    height: inherit;
+}
+.header a
+{
+    display: flex;
+    align-items:center;
+    height: inherit;
+    padding: 0 10px;
+}
+/* Quitando margen del figure */
+figure
+{
+    margin: 0;
 }
 /* aplicando color al link a */
 .header a
+{
+    color: white;
+    text-decoration: none;
+}
+.flexbox
+{
+ display: flex;
+ flex-wrap: wrap;
+}
+.box
+{
+    width: 50px;
+    height:50px;
+    border: 1px solid red;
+    flex-shrink: 0;
+    margin: 5px;
+}
+.footer
+{
+    color: white;
+    background: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img
+{
+    vertical-align: middle;
+}
+.footer a
 {
     color: white;
     text-decoration: none;
