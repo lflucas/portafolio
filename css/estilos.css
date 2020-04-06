@@ -36,6 +36,19 @@ h1 strong
 {
     color: #026fff;
 }
+h2
+{
+       /* titulo proyectos destacados colocando de color azul celeste */
+    color: #026fff;
+    /* cambiando fuente de minusculas a mayusculas */
+    text-transform: uppercase;
+    /* colocando fuente personalizado al titulo */
+    font-family:'Source sans pro', sans-serif;
+    font-weight: bold;
+    /* tamaño de la fuente */
+    font-size: 24px;
+    margin-bottom: 40px;
+}
 
 /* Colocando hero de 300px de alto */
 .hero
@@ -59,6 +72,8 @@ h1 strong
 .portfolio
 {
     background: #fafafa;
+    /* Dandole padding al titulo para que no este tan pegado de la esquina */
+    padding: 20px;
 }
 /* Decorando la clase proyecto */
 .project
@@ -75,13 +90,39 @@ h1 strong
     border-radius: 10px;
     /* Aplicando un margen hacia abajo para separar proyecto 1 del 2 */
     margin-bottom: 15px;
-    margin: 10px;
     padding: 20px;
     /* colocando color de fondo blanco */
     background: white;
     /* Aliniando descripcion con imagen con el display:flex  */
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+/* alineando el titulo de platzi video */
+.project-title
+{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+/* Alineando subtitulo de react native/react y tambien la fecha */
+
+.project-course, .project-date, .project-url
+{
+    margin:10px 0;
+}
+/* Subiendo de fuente al parrafo  */
+.project-description
+{
+    font-size: 20px;
+}
+.project strong
+{
+    font-family: 'Fjalla One', sans-serif;
+
+}
+
 
 /* detallando a la izquierda project-details */
 .project-details
