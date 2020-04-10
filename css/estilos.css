@@ -129,12 +129,18 @@ h2
 /* detallando a la izquierda project-details */
 .project-details
 {
-    width: 500px;
+    width: 50%;
+    
 }
 /* alinieando el image-contaimer a la derecha por medio del ancho */
 .project-imageContainer
 {
-    width: 500px;
+    width: 50%;
+}
+.project-imageContainer img 
+{
+    max-width: 100%;
+    width: 100%;
 }
 /* Añadiendo color a la imagen y texto del hero */
 .header
@@ -396,10 +402,54 @@ Realizando division de social
     {
         text-align: center;
     }
+    .project 
+    {
+        display: block;
+    }
+    .project-imageContainer
+    {
+        width: auto;
+        text-align: center;
+    }
+    .project-details
+    {
+        width: auto;
+        /* font-size: 16px; */
+    }
+    .project-course .project-date .project-course
+    {
+        margin: .4em 0;
+    }
+    .project-title
+    {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-url
+    {
+        font-size: 1em;
+    }
+    .project-course
+    {
+        font-size: .7em;
+    }
+    .project-date
+    {
+        font-size: 1em;
+    }
+    .project-description
+    {
+        font-size: .8em;
+    }
 }
 @media screen  and (max-width:480px)
 {
 
+    .project-details
+    {
+        width: auto;
+        font-size: 12px;
+    }
 }
 @media screen and (max-width:320px)
 {
