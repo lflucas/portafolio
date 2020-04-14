@@ -499,8 +499,16 @@ Realizando division de social
 }
 /* Iniciando etapa responsiva del sitio web  */
 /* Desktop First que empiece desde el media queries más grande */
-@media screen  and (max-width:1024px)
+@media screen  and (max-width:1023px)
 {
+    .event-list-title
+    {
+        margin-left: 0;
+    }
+    .portfolio
+    {
+        padding: 0;
+    } 
     .container 
     {
         padding: 0 1em;
@@ -533,6 +541,11 @@ Realizando division de social
 }
 @media screen  and (max-width:767px)
 {
+    h2 
+    {
+        font-size: 1.2em;
+        margin: .5em 0;
+    }
     /* Ajustando el menu de hamburgesa para que solo salga de esta pantalla hacia abajo */
     .burger-button 
     {
@@ -625,7 +638,7 @@ Realizando division de social
     }
     .project-description
     {
-        font-size: .8em;
+        font-size: 1em;
     }
     /* Elementos responsivo de la etiqeta event */
     .event
@@ -648,7 +661,7 @@ Realizando division de social
     .project-details
     {
         width: auto;
-        font-size: 12px;
+        font-size: 14px;
     }
     .event-detail
     {
